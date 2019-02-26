@@ -38,8 +38,7 @@ def Manage():
         if not config.edit:
             # it tries to create client's directory
             try:
-                os.makedirs(config.clients + config.client.name + '/' + config.img)
-                os.makedirs(config.clients + config.client.name + '/' + config.project)
+                os.makedirs(config.clients + config.client.name)
             # if it can't, throws an exception
             except OSError:
                 pass
