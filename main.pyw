@@ -27,6 +27,7 @@ while True:
                 break
 
             if config.edit_event is None or config.edit_event == '_CANCEL_':
+                config.edit = False
                 gui.main_win.FindElement('_NEW_').Update('New')
                 gui.edit_win.Close()
                 break
